@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipehunt - Your Recipe destination</title>
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/img/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer type="module" src="./assets/js/index.js"></script>
+  </head>
+  <body class="antialiased">
+    <div class="main min-h-screen bg-orange-50 text-gray-800 text-lg">
+      <div
+        class="navbar container flex flex-col justify-between items-center gap-6 mx-auto p-9 py-8 lg:flex-row lg:gap-3"
+      >
+        <h2 class="logo text-2xl font-bold italic">
+          recipe<span class="text-orange-500">hunt</span>
+        </h2>
+        <form class="relative search-bar">
+          <input
+            type="search"
+            placeholder="Search for recipe..."
+            required
+            class="search-box w-76 p-2 px-6 outline-none rounded-full shadow-md shadow-orange-200 focus:shadow-lg focus:shadow-orange-300/70 duration-200 md:w-96"
+          />
+        </form>
+        <a
+          href="/"
+          class="font-medium text-gray-800/80 hover:text-orange-500 transition duration-300"
+          >Home</a
+        >
+      </div>
+      <div
+        class="hero flex flex-col items-center justify-center gap-5 text-center mt-8 lg:mt-16"
+      >
+        <h1 class="text-3xl md:text-5xl font-bold">
+          Welcome to <span class="text-orange-500">Recipe hunt</span>
+        </h1>
+        <p class="font-medium p-3 text-gray-800/80 lg:mt-4 md:text-2xl">
+          Your Recipe destination <br />Search your favourite recipes with ease
+        </p>
+      </div>
+
+      <div
+        class="hidden search-fail text-center p-5 font-bold text-2xl lg:text-4xl lg:mt-8"
+      ></div>
+
+      <div
+        class="recipe-container flex flex-row flex-wrap items-center justify-center"
+      ></div>
+    </div>
+    <footer
+      class="flex flex-col items-center justify-center gap-2 bg-[#ffdac1] p-3"
+    >
+      <h2 class="logo text-2xl font-bold italic">
+        recipe<span class="text-orange-500">hunt</span>
+      </h2>
+      <p class="text-gray-800">&copy; 2023 Recipehunt. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
